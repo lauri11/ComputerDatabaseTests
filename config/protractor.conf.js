@@ -27,6 +27,8 @@ exports.config = {
     },
 
     onPrepare: function () {
+        let GLOBALS = require('./GLOBALS');
+        GLOBALS();
         browser.manage().window().maximize(); // maximize the browser before executing the feature files
         browser.ignoreSynchronization = true;
     }

@@ -1,15 +1,7 @@
 let MainPage = require("./../../pages/MainPage"),
-    AddComputerPage = require("./../../pages/AddComputerPage"),
-    chai = require('chai'),
-    chaiAsPromised = require('chai-as-promised');
+    AddComputerPage = require("./../../pages/AddComputerPage");
 
-chai.use(chaiAsPromised);
-chai.config.showDiff = true;
-chai.config.includeStack = true;
-chai.config.truncateThreshold = 0;
-
-let expect = chai.expect,
-    mainPage = new MainPage(),
+let mainPage = new MainPage(),
     addComputerPage = new AddComputerPage(),
     editComputerHeaderText = 'Edit computer',
     addComputerHeaderText = 'Add a computer',

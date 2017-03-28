@@ -1,17 +1,9 @@
 let MainPage = require("./../../pages/MainPage"),
     SharedHeader = require("./../../pages/SharedHeader"),
     Hepler = require("./../../helper/Helper.js"),
-    chai = require('chai'),
-    chaiAsPromised = require('chai-as-promised'),
     moment = require('moment');
 
-chai.use(chaiAsPromised);
-chai.config.showDiff = true;
-chai.config.includeStack = true;
-chai.config.truncateThreshold = 0;
-
-let expect = chai.expect,
-    mainPage = new MainPage(),
+let mainPage = new MainPage(),
     sharedHeader = new SharedHeader(),
     helper = new Hepler();
 
@@ -28,7 +20,6 @@ let myStepDefinitionsWrapper = function () {
     this.Then(/^I should see Filter input$/, function (done) {
         expect(mainPage.filterInput.isDisplayed()).to.eventually.equal(true).and.notify(done);
     });
-
 
     this.Then(/^I should see Filter button$/, function (done) {
         expect(mainPage.filterButton.isDisplayed()).to.eventually.equal(true).and.notify(done);
@@ -54,7 +45,6 @@ let myStepDefinitionsWrapper = function () {
         expect(mainPage.computersTable.isDisplayed()).to.eventually.equal(true)
             .and.notify(done);
     });
-
 
     this.Then(/^notification message saying (.*) is displayed$/, function (expectedMessage, done) {
         expect(mainPage.computerNotificationMessageText).to.eventually.equal(expectedMessage)
