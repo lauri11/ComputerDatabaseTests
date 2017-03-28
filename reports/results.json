@@ -1,0 +1,247 @@
+[
+  {
+    "elements": [
+      {
+        "id": "test;test",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "test",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I navigate to Computers main page",
+            "result": {
+              "status": "passed",
+              "duration": 1874331945
+            },
+            "line": 5,
+            "match": {
+              "location": "D:\\tasks\\TestCucumberProject\\specs\\step_definitions\\commonSteps.js:2"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I navigate to Add a computer page",
+            "result": {
+              "status": "passed",
+              "duration": 254753168
+            },
+            "line": 8,
+            "match": {
+              "location": "D:\\tasks\\TestCucumberProject\\specs\\step_definitions\\mainPageSteps.js:49"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Computer name",
+                      "Introduced date",
+                      "Discontinued date",
+                      "Company"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "AA",
+                      "today",
+                      "2018-12-12",
+                      "Sony"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "name": "I create a new computer with the following details",
+            "result": {
+              "status": "passed",
+              "duration": 1619422113
+            },
+            "line": 9,
+            "match": {
+              "location": "D:\\tasks\\TestCucumberProject\\specs\\step_definitions\\addComputerPageSteps.js:54"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Computer name",
+                      "Introduced date",
+                      "Discontinued date",
+                      "Company"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "AA",
+                      "today",
+                      "12 Dec 2018",
+                      "Sony"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "name": "AA computer appears in the computers table with the following data",
+            "result": {
+              "status": "passed",
+              "duration": 415309326
+            },
+            "line": 12,
+            "match": {
+              "location": "D:\\tasks\\TestCucumberProject\\specs\\step_definitions\\mainPageSteps.js:64"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I navigate to Add a computer page",
+            "result": {
+              "status": "passed",
+              "duration": 211553038
+            },
+            "line": 15,
+            "match": {
+              "location": "D:\\tasks\\TestCucumberProject\\specs\\step_definitions\\mainPageSteps.js:49"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Computer name",
+                      "Introduced date",
+                      "Discontinued date",
+                      "Company"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "A",
+                      "today",
+                      "2019-12-12",
+                      "Sony"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "name": "I create a new computer with the following details",
+            "result": {
+              "status": "passed",
+              "duration": 1590271164
+            },
+            "line": 16,
+            "match": {
+              "location": "D:\\tasks\\TestCucumberProject\\specs\\step_definitions\\addComputerPageSteps.js:54"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "A computer is shown in the table before computer AA",
+            "result": {
+              "status": "passed",
+              "duration": 46195187
+            },
+            "line": 19,
+            "match": {
+              "location": "D:\\tasks\\TestCucumberProject\\specs\\step_definitions\\mainPageSteps.js:118"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I navigate to Add a computer page",
+            "result": {
+              "status": "passed",
+              "duration": 199333130
+            },
+            "line": 20,
+            "match": {
+              "location": "D:\\tasks\\TestCucumberProject\\specs\\step_definitions\\mainPageSteps.js:49"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Computer name",
+                      "Introduced date",
+                      "Discontinued date",
+                      "Company"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "AAA",
+                      "today",
+                      "2019-11-11",
+                      "Sony"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "name": "I create a new computer with the following details",
+            "result": {
+              "status": "passed",
+              "duration": 1501685437
+            },
+            "line": 21,
+            "match": {
+              "location": "D:\\tasks\\TestCucumberProject\\specs\\step_definitions\\addComputerPageSteps.js:54"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "AAA computer is shown in the table after computer AA",
+            "result": {
+              "status": "failed",
+              "duration": 58564213,
+              "error_message": "AssertionError: expected 'AAA' to equal 'AAAAAAAA'\n    at assertEqual (D:\\tasks\\TestCucumberProject\\node_modules\\chai\\lib\\chai\\core\\assertions.js:487:12)\n    at ctx.(anonymous function) (D:\\tasks\\TestCucumberProject\\node_modules\\chai\\lib\\chai\\utils\\addMethod.js:41:25)\n    at doAsserterAsyncAndAddThen (D:\\tasks\\TestCucumberProject\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:293:29)\n    at .<anonymous> (D:\\tasks\\TestCucumberProject\\node_modules\\chai-as-promised\\lib\\chai-as-promised.js:252:17)\n    at ctx.(anonymous function) [as equal] (D:\\tasks\\TestCucumberProject\\node_modules\\chai\\lib\\chai\\utils\\overwriteMethod.js:49:33)\n    at mainPage.getComputerNameNextToGivenOne.getText.then.actualNextComputerName (D:\\tasks\\TestCucumberProject\\specs\\step_definitions\\mainPageSteps.js:129:59)\n    at D:\\tasks\\TestCucumberProject\\node_modules\\protractor\\built\\element.js:798:32\n    at ManagedPromise.invokeCallback_ (D:\\tasks\\TestCucumberProject\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1379:14)\n    at TaskQueue.execute_ (D:\\tasks\\TestCucumberProject\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2913:14)\n    at TaskQueue.executeNext_ (D:\\tasks\\TestCucumberProject\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2896:21)"
+            },
+            "line": 24,
+            "match": {
+              "location": "D:\\tasks\\TestCucumberProject\\specs\\step_definitions\\mainPageSteps.js:118"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@run",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "test",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "test",
+    "tags": [
+      {
+        "name": "@run",
+        "line": 1
+      }
+    ],
+    "uri": "D:\\tasks\\TestCucumberProject\\specs\\tableOrderingSpec.feature"
+  }
+]
