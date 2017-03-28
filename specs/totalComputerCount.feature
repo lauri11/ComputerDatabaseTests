@@ -1,4 +1,3 @@
-#@run
 Feature: As a user of Computer Database application
   I should see a correct total number of computers
 

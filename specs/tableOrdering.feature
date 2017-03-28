@@ -1,4 +1,3 @@
-@run
 Feature: As a user of Computer Database application
   I need to have table ordering functionality
   working as expected
