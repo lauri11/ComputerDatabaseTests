@@ -23,7 +23,6 @@ let myStepDefinitionsWrapper = function () {
 
     this.Then(/^I should see the following inputs with the following labels$/, function (table, done) {
         let expectedLabelsList = table.raw()[0];
-        // expect(addComputerPage.getInputsBasedOnLabels(expectedLabelsList)).to.eventually.deep.equal([true, true, true]);
         expect(addComputerPage.getInputsLabels(expectedLabelsList)).to.eventually.deep.equal(expectedLabelsList)
             .and.notify(done);
     });
