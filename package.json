@@ -7,7 +7,7 @@
     "lodash": "^4.16.6",
     "log4js": "^0.6.38",
     "moment": "2.14.1",
-    "protractor": "^4.0.10",
+    "protractor": "latest",
     "cucumber": "1.3.1",
     "protractor-cucumber-framework": "0.6.0",
     "chai": "3.5.0",
