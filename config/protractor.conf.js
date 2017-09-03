@@ -21,7 +21,7 @@ exports.config = {
         require: ['./../specs/step_definitions/*.js'],
         tags: [],
         strict: true,
-        format: ["json:./../reports/results.json", "pretty"],
+        format: ["json:./reports/results.json", "pretty"],
         dryRun: false,
         compiler: []
     },
